@@ -1,0 +1,188 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html body{
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 100%;
+  background-image: url(../img/fondoinicio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+header{
+  height: 270px;
+}
+
+.logo{
+  margin-top: 25px;
+  margin-left: 60px;
+  width: 180px;
+  float: left;
+}
+
+.shoponline{
+  margin: 20px 60px;
+  width: 32px;
+  float: right;
+}
+
+.icon a:hover{
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%)
+  -ms-filter: invert(100%)
+  -o-filter: invert(100%)
+}
+
+/*
+-webkit-
+-moz-
+-ms-
+-o-
+*/
+
+/* The navigation menu */
+.navbar{
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-right: 0;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: black;
+  float: right;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.navbar a{
+  float: left;
+  text-decoration: none;
+  margin: 5px 10px;
+  color: black;
+  font-weight: bold;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 7px 10px 5px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Add a  color to navigation links on hover */
+.navbar a:hover, .subnav a:hover, .subnavbtn:hover{
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:active, .subnav a:active, .subnavbtn:active{
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content{
+  display: none;
+  position: absolute;
+  float: right;
+  color: black;
+}
+
+.subnav-content ul li{
+  list-style: none;
+}
+
+/* Style the subnav links */
+.subnav-content a{
+  float: center;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover{
+  color: white;
+  font-size: bold;
+}
+
+/* When you move the mouse over the subnav container, open the
+subnav content */
+.subnav:hover .subnav-content{
+  display: block;
+}
+
+/* BPDY spacing */
+.spacing{
+  width: 100%;
+  height: 280px;
+}
+
+/* FOOTER */
+#networks{
+  margin-bottom: 500px;
+  font-size: 9px;
+  text-align: center;
+}
+
+.networks a img{
+  margin: 20px;
+}
+
+.networks a:hover{
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -ms-filter: invert(100%);
+  -o-filter: invert(100%);
+}
+
+.up{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.up img{
+  margin-bottom: 50px;
+  margin-right: 50px;
+  width: 35px;
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%);
+  -moz-filter: opacity(50%);
+  -ms-filter: opacity(50%);
+  -o-filter: opacity(50%);
+}
+
+.up img:hover{
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%)
+  -ms-filter: brightness(100%)
+  -o-filter: brightness(100%)
+}
+
+@media only screen and (max-width: 320px){
+  
+}

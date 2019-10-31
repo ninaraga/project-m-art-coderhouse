@@ -1,0 +1,232 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 100%;
+  background-color: #f4f0f1;
+}
+
+/* HEADER */
+header{
+  height: 270px;
+}
+
+.icon{
+  z-index: 4;
+}
+
+.logo{
+  margin-top: 25px;
+  margin-left: 60px;
+  width: 200px;
+  position: sticky;
+  float: left;
+}
+
+.shoponline{
+  margin: 20px 60px;
+  width: 40px;
+  float: right;
+  position: sticky;
+}
+
+.icon a:hover{
+  filter: opacity(50%);
+}
+
+/* The navigation menu */
+.navbar{
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-right: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: black;
+  float: right;
+  position: sticky;
+}
+
+/* Navigation links */
+.navbar a{
+  float: left;
+  text-decoration: none;
+  margin: 5px 10px;
+  color: black;
+}
+
+.navbar a:active{
+  text-decoration: underline;
+  color: #4b82c4;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+  color: #4b82c4;
+}
+
+.navbar a:visited{
+  text-decoration: none;
+  color: grey;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* Add a  color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  text-decoration: underline;
+  color: #4b82c4;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  float: right;
+  color: black;
+}
+
+.subnav-content ul li{
+  list-style: none;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  text-decoration: underline;
+  color: #4b82c4;
+}
+
+/* When you move the mouse over the subnav container, open the
+subnav content */
+.subnav:hover .subnav-content{
+  display: block;
+}
+
+/* BODY */
+.promo{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+.promo table{
+  border: none;
+  style: none;
+}
+
+.promo img{
+  margin: 5px;
+  transition: all 0.2s;
+  z-index: 5px;
+}
+
+.promo img:hover{
+  transform: scale(1.1);
+}
+
+section{
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-left: 1100px;
+}
+
+section button{
+  padding: 8px 16px;
+  width: 140px;
+  height: 60px;
+  border: none;
+  background-color: #af8569;
+  color: #f4f0f1;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+
+section button:hover{
+  filter: brightness(80%);
+}
+
+/* FOOTER */
+#networks{
+  position: relative;
+  float: center;
+  margin-top: 100px;
+  font-size: 9px;
+  text-align: center;
+  z-index: 4;
+}
+
+.networks a img{
+  margin: 20px;
+}
+
+.networks a:hover {
+  filter: invert(50%);
+}
+
+.rosa{
+  margin-left: 1450px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 3;
+}
+
+#azul{
+  position: absolute;
+  display: flex;
+  float: left;
+  z-index: 3;
+}
+
+#rosa2{
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 20px;
+  transform: rotate(50deg);
+  z-index: 3;
+}
+
+#azul2{
+  position: relative;
+  display: flex;
+  float: right;
+  z-index: 3;
+}

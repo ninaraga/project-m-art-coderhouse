@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 100%;
+  background-image: url(../img/fondosobremi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+header{
+  height: 270px;
+}
+
+.logo{
+  margin-top: 25px;
+  margin-left: 60px;
+  width: 180px;
+  position: sticky;
+  float: left;
+}
+
+.shoponline{
+  margin: 20px 60px;
+  width: 35px;
+  float: right;
+  position: sticky;
+}
+
+.icon a:hover{
+  filter: opacity(60%);
+  -webkit-filter: opacity(60%);
+  -moz-filter: opacity(60%);
+  -ms-filter: opacity(60%);
+  -o-filter: opacity(60%);
+}
+
+/* The navigation menu */
+.navbar{
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-right: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+  float: right;
+}
+
+/* Navigation links */
+.navbar a{
+  float: left;
+  text-decoration: none;
+  margin: 5px 10px;
+  color: white;
+}
+
+.navbar a:active{
+  font-weight: bold;
+  color: #4b82c4;
+}
+
+.navbar a:hover{
+  font-weight: bold;
+  color: #4b82c4;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Add a  color to navigation links on hover */
+.navbar a:hover, .subnav:hover, .subnavbtn:hover,
+.subnav-content a:hover{
+  font-weight: bold;
+  color: #4b82c4;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  float: right;
+  color: white;
+}
+
+.subnav-content ul li{
+  list-style: none;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* When you move the mouse over the subnav container, open the
+subnav content */
+.subnav:hover .subnav-content{
+  display: block;
+}
+
+/* BODY */
+.sobremi{
+  position: relative;
+  display: block;
+  margin-left: 500px;
+  margin-bottom: 100px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.biografia h2{
+  margin-bottom: 80px;
+  text-align: left;
+  font-size: 40px;
+}
+
+.biografia p{
+  margin-top: 110px;
+  margin-left: 70px;
+  margin-bottom: 100px;
+  width: 590px;
+}
+
+/* FOOTER */
+#networks{
+  margin-top: 120px;
+  font-size: 9px;
+  text-align: center;
+  color: grey;
+}
+
+.networks a img{
+  margin: 5px;
+}
+
+.networks a img:hover{
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -ms-filter: invert(100%);
+  -o-filter: invert(100%);
+}
+
+.up{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.up img{
+  margin-bottom: 50px;
+  margin-right: 50px;
+  width: 35px;
+  filter: opacity(50%);
+  -webkit-filter: opacity(50%);
+  -moz-filter: opacity(50%);
+  -ms-filter: opacity(50%);
+  -o-filter: opacity(50%);
+}
+
+.up img:hover{
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%)
+  -ms-filter: brightness(100%)
+  -o-filter: brightness(100%)
+}
