@@ -1,17 +1,3 @@
-/*!
- * Start Bootstrap - Creative v5.1.8 (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -571,6 +557,12 @@ pre code {
   height: 30px;
 }
 
+.darkdiv{
+  width: 100%;
+  padding-top: 8px;
+  background-color: #0c0a1d;
+}
+
 #container-footer {
   width: 100%;
   padding-right: 15px;
@@ -578,6 +570,18 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   height: 30px;
+}
+
+.video{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.text-orange{
+  color: #f4623a;
 }
 
 @media (min-width: 576px) {
@@ -6842,8 +6846,8 @@ button.bg-dark:focus {
   align-self: baseline !important;
 }
 
-#networks a img, #networks a i {
-  margin: 20px;
+#networks a img, #networks a {
+  margin: 0.7rem;
 }
 
 @keyframes click {
@@ -9668,8 +9672,8 @@ hr.light {
   padding: 6rem 0;
 }
 
-.h-3{
-  height: 350px;
+.h-80{
+  height: 80%;
 }
 
 #mainNav-p {
